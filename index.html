@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no" />
+  <meta name="theme-color" content="#07130c" />
+  <title>Happy Birthday, Guddu 💚</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Dancing+Script:wght@500;600;700&family=Caveat:wght@400;600;700&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <canvas id="sparkles"></canvas>
+
+  <!-- Story progress bar (like IG stories) -->
+  <div class="progress" id="progress">
+    <div class="progress-fill" id="progressFill"></div>
+  </div>
+
+  <main id="main">
+
+    <!-- 1. HERO -->
+    <section class="snap hero" id="hero">
+      <div class="hero-inner">
+        <p class="hero-kicker">a little something for</p>
+        <h1 class="hero-title" id="heroTitle"></h1>
+        <p class="hero-sub">Happy Birthday 💚</p>
+        <div class="hero-date">April 18, 2026</div>
+      </div>
+      <div class="scroll-hint">
+        <span>swipe up</span>
+        <div class="arrow"></div>
+      </div>
+    </section>
+
+    <!-- 2. MEMORIES INTRO -->
+    <section class="snap intro" id="introMem">
+      <div class="intro-inner">
+        <p class="small-tag">chapter one</p>
+        <h2 class="big-serif">our little frames</h2>
+        <p class="handwritten mint">little moments, big heart 💚</p>
+      </div>
+    </section>
+
+    <!-- 3. MEMORY 1 — polaroid -->
+    <section class="snap memory-sec" id="mem1">
+      <div class="polaroid tilt-left">
+        <div class="polaroid-pin"></div>
+        <img src="Gemini_Generated_Image_lfqfmqlfqfmqlfqf.png" alt="on the stairs" />
+        <div class="polaroid-cap handwritten">those long talks on the stairs…</div>
+      </div>
+    </section>
+
+    <!-- 4. MEMORY 2 — polaroid -->
+    <section class="snap memory-sec" id="mem2">
+      <div class="polaroid tilt-right">
+        <div class="polaroid-pin"></div>
+        <img src="Gemini_Generated_Image_pahxmdpahxmdpahx.png" alt="lazy lunch" />
+        <div class="polaroid-cap handwritten">lazy lunches — bhindi &amp; aam ras 🥭💚</div>
+      </div>
+    </section>
+
+    <!-- 5. BRIDGE -->
+    <section class="snap intro bridge-sec" id="bridge">
+      <div class="intro-inner">
+        <p class="small-tag">chapter two</p>
+        <h2 class="big-serif italic">but something<br />happened today…</h2>
+        <button class="cta-btn pulse" id="storyBtn">
+          <span>what you missed</span>
+          <svg viewBox="0 0 24 24" width="18" height="18">
+            <path fill="currentColor" d="M12 16l-6-6h12z" />
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- STORY PANELS (locked until click) -->
+    <div id="storyWrap" class="story-wrap">
+
+      <section class="snap story-panel" id="s1">
+        <div class="story-img-wrap">
+          <img src="Gemini_Generated_Image_r824war824war824.png" alt="" />
+        </div>
+        <p class="story-cap handwritten">I found our table.<br />window seat. your chair — reserved.</p>
+      </section>
+
+      <section class="snap story-panel" id="s2">
+        <div class="story-img-wrap">
+          <img src="Gemini_Generated_Image_3j91v73j91v73j91.png" alt="" />
+        </div>
+        <p class="story-cap handwritten">"till when are you there?"<br />"come, join me 💚"</p>
+      </section>
+
+      <section class="snap story-panel" id="s3">
+        <div class="story-img-wrap">
+          <img src="Gemini_Generated_Image_cancztcancztcanc.png" alt="" />
+        </div>
+        <p class="story-cap handwritten">…and my mind started running 🏃💭</p>
+      </section>
+
+      <section class="snap story-panel" id="s4">
+        <div class="story-img-wrap">
+          <img src="Gemini_Generated_Image_f1r7r7f1r7r7f1r7.png" alt="" />
+        </div>
+        <p class="story-cap handwritten">Bournvita ☕ KitKat 🍫 a tiny cake 🎂<br />all for you</p>
+      </section>
+
+      <section class="snap story-panel" id="s5">
+        <div class="story-img-wrap">
+          <img src="Gemini_Generated_Image_r9ke1er9ke1er9ke.png" alt="" />
+        </div>
+        <p class="story-cap handwritten">I could already see you laughing…<br />cutting the cake with me</p>
+      </section>
+
+      <section class="snap story-panel" id="s6">
+        <div class="story-img-wrap">
+          <img src="Gemini_Generated_Image_cx7y5acx7y5acx7y.png" alt="" />
+        </div>
+        <p class="story-cap handwritten">then your message came.</p>
+      </section>
+
+      <section class="snap story-panel" id="s7">
+        <div class="story-img-wrap">
+          <img src="Gemini_Generated_Image_bdbx36bdbx36bdbx.png" alt="" />
+        </div>
+        <p class="story-cap handwritten">the candle stayed lit.<br />the chair stayed empty. 💔</p>
+      </section>
+
+      <!-- ANYWAYS -->
+      <section class="snap intro anyways-sec story-panel" id="anywaysSec">
+        <div class="intro-inner">
+          <p class="small-tag">but…</p>
+          <button class="cta-btn soft pulse-soft" id="anywaysBtn">
+            <span>anyways…</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- LETTER -->
+      <section class="snap letter-sec" id="letterSec">
+        <div class="letter-paper">
+          <div class="letter-tape"></div>
+          <h3 class="letter-title">For Guddu,</h3>
+          <p class="letter-body" id="letterBody"></p>
+          <p class="letter-sign">— yours, always 💚</p>
+        </div>
+      </section>
+
+      <!-- CAKE -->
+      <section class="snap wish" id="wishSec">
+        <h2 class="big-serif small">one last thing…</h2>
+        <p class="handwritten mint">tap the candle, make a wish 🤍</p>
+
+        <div class="cake-wrap" id="cakeWrap">
+          <div class="cake">
+            <div class="candle" id="candle">
+              <div class="flame"></div>
+              <div class="wick"></div>
+            </div>
+            <div class="cake-top"></div>
+            <div class="cake-drip"></div>
+            <div class="cake-body"><span>Happy Birthday</span></div>
+            <div class="cake-plate"></div>
+          </div>
+        </div>
+
+        <div class="wish-final" id="wishFinal">
+          <p class="handwritten big">Happy Birthday,<br />Guddu 💚</p>
+          <p class="handwritten mint small-tag">be happy. always. 🤍</p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <canvas id="confetti"></canvas>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
